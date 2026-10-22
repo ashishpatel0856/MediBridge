@@ -1,6 +1,6 @@
 const Stripe = require('stripe');
 const { config } = require('../../config/env');
-const logger = require('../logger');
+const { logger } = require('../logger');
 
 let stripeInstance = null;
 

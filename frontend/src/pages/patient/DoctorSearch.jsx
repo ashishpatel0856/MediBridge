@@ -13,13 +13,7 @@ import {
   Users,
   Calendar,
   ChevronRight,
-  Filter,
   Clock,
-  IndianRupee,
-  ShieldCheck,
-  CheckCircle2,
-  Award,
-  Sparkles
 } from 'lucide-react';
 
 const SIDEBAR_LINKS = [

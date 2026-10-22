@@ -18,7 +18,6 @@ import {
   AlertTriangle,
   ChevronRight,
   Plus,
-  Video
 } from 'lucide-react';
 
 const SIDEBAR_LINKS = [

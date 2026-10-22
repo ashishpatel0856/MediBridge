@@ -13,7 +13,6 @@ const { register, httpRequestDurationHistogram, httpRequestsTotal } = require('.
 const { getDb } = require('./infrastructure/database/connection');
 const { NotFoundError } = require('./domain/errors/app-errors');
 
-// Import Feature Routes
 const authRoutes = require('./modules/auth/auth.routes');
 const doctorRoutes = require('./modules/doctor/doctor.routes');
 const slotRoutes = require('./modules/slot/slot.routes');
@@ -24,16 +23,13 @@ const auditRoutes = require('./modules/audit/audit.routes');
 
 const app = express();
 
-// Security Middlewares
 app.use(helmet());
 app.use(cors({ origin: '*', credentials: true }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// Tracing and Request Context
 app.use(correlationMiddleware);
 
-// Observability: Metrics Timing Middleware
 app.use((req, res, next) => {
   const start = Date.now();
   res.on('finish', () => {
@@ -60,7 +56,7 @@ try {
   // Gracefully skip swagger doc load if yaml isn't present
 }
 
-// Health Checks (Kubernetes Liveness & Readiness Probes)
+// Health Checks 
 app.get('/health', async (req, res) => {
   const dbOk = await getDb().ping();
   const status = dbOk ? 'UP' : 'DEGRADED';

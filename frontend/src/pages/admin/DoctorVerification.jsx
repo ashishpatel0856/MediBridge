@@ -14,7 +14,6 @@ import {
   ClipboardList,
   CheckCircle,
   Search,
-  Filter,
   Award,
   Clock,
   IndianRupee,

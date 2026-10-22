@@ -17,12 +17,10 @@ import {
   ClipboardList,
   Search,
   RefreshCw,
-  Clock,
   Activity,
   ArrowUpRight,
   Filter,
   CheckCircle2,
-  XCircle,
   AlertCircle
 } from 'lucide-react';
 

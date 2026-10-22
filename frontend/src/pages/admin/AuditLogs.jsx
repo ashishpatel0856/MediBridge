@@ -4,7 +4,7 @@ import DashboardLayout from '../../components/layout/DashboardLayout';
 import Card from '../../components/common/Card';
 import Badge from '../../components/common/Badge';
 import Button from '../../components/common/Button';
-import Skeleton, { TableRowSkeleton } from '../../components/common/Skeleton';
+import Skeleton from '../../components/common/Skeleton';
 import EmptyState from '../../components/common/EmptyState';
 import {
   ClipboardList,
@@ -13,10 +13,6 @@ import {
   Search,
   Filter,
   RefreshCw,
-  Lock,
-  Calendar,
-  User,
-  ShieldAlert
 } from 'lucide-react';
 
 const SIDEBAR_LINKS = [

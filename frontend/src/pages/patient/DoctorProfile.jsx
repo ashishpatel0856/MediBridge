@@ -16,14 +16,9 @@ import {
   Star,
   Clock,
   Award,
-  Languages,
   ArrowLeft,
   Calendar,
-  CheckCircle2,
   ShieldCheck,
-  CreditCard,
-  Sparkles,
-  Info
 } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 

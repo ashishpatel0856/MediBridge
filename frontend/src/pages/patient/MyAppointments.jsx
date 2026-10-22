@@ -15,7 +15,6 @@ import {
   ChevronRight,
   Clock,
   Video,
-  CheckCircle2
 } from 'lucide-react';
 
 const SIDEBAR_LINKS = [

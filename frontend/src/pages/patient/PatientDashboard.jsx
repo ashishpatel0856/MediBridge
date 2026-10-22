@@ -14,11 +14,7 @@ import {
   FileText,
   User,
   Clock,
-  ArrowRight,
-  ShieldCheck,
-  Video,
   ChevronRight,
-  Activity
 } from 'lucide-react';
 
 const SIDEBAR_LINKS = [

@@ -9,7 +9,7 @@ import Button from '../../components/common/Button';
 import Alert from '../../components/common/Alert';
 import Modal from '../../components/common/Modal';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
-import { ArrowLeft, Calendar, Clock, Users, Plus, Minus } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Users, Plus } from 'lucide-react';
 
 const SIDEBAR_LINKS = [
   { to: '/doctor/dashboard', label: 'Dashboard', icon: Users },

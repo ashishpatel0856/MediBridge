@@ -1,6 +1,5 @@
 const { getDb } = require('../infrastructure/database/connection');
 const { idempotencyReplaysCounter } = require('../infrastructure/metrics/prometheus');
-const { ConflictError } = require('../domain/errors/app-errors');
 
 const idempotencyMiddleware = async (req, res, next) => {
   // Only process write operations
