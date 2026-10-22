@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", -apple-system, sans-serif;
+
+  /* Primary Emerald & Teal Palette */
+  --color-brand-950: #022c22;
+  --color-brand-900: #064e3b;
+  --color-brand-800: #065f46;
+  --color-brand-700: #047857;
+  --color-brand-600: #059669;
+  --color-brand-500: #10b981;
+  --color-brand-400: #34d399;
+  --color-brand-300: #6ee7b7;
+  --color-brand-200: #a7f3d0;
+  --color-brand-100: #d1fae5;
+  --color-brand-50: #ecfdf5;
+
+  /* Soft Blue Secondary Accent Palette */
+  --color-accent-900: #0c4a6e;
+  --color-accent-700: #0369a1;
+  --color-accent-600: #0284c7;
+  --color-accent-500: #0ea5e9;
+  --color-accent-400: #38bdf8;
+  --color-accent-100: #e0f2fe;
+  --color-accent-50: #f0f9ff;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium Healthcare SaaS subtle accents */
+.bg-radial-subtle {
+  background-image: 
+    radial-gradient(ellipse at 10% 10%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 90% 90%, rgba(14, 165, 233, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 50%, rgba(248, 250, 252, 0.8) 0%, transparent 70%);
+}
+
+.shadow-card {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 10px 25px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+}
+
+/* Glass navigation bar */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
