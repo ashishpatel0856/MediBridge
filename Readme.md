@@ -650,7 +650,7 @@ The original project specification identifies these targets:
 
 These are architectural objectives, not independently verified performance results.
 
----
+<!-- ---
 
 ## 📸 Screenshots
 
@@ -684,7 +684,7 @@ Application screenshots will be added as the user interface is finalized.
 
 `TODO: Replace this placeholder with the actual demonstration video URL.`
 
----
+--- -->
 
 ## 🗺 Future Improvements
 
